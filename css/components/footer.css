@@ -1,0 +1,106 @@
+/* --- Footer --- */
+.site-footer {
+  background: linear-gradient(135deg, #03201f 0%, #064e4b 60%, #042f2e 100%);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 70px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+.site-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.2fr 1.5fr;
+  gap: 36px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 32px;
+  height: 3px;
+  background: #34d399;
+  border-radius: 2px;
+}
+.footer-desc {
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-links-list a {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-links-list a:hover {
+  color: #34d399;
+  padding-left: 6px;
+}
+
+/* Visitor Counter Widget */
+.counter-box-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.counter-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(8px);
+}
+.counter-label {
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.counter-value {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 800;
+  color: #34d399;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  gap: 12px;
+}

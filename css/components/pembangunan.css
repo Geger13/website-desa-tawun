@@ -1,0 +1,163 @@
+/* --- Geotagging Pembangunan Terbuka Section --- */
+.view-mode-toggle {
+  display: flex;
+  align-items: center;
+  background: var(--slate-100);
+  padding: 4px;
+  border-radius: var(--radius-full);
+  gap: 4px;
+  margin: 0 auto 36px;
+  width: fit-content;
+}
+.view-btn {
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--slate-600);
+  cursor: pointer;
+  background: transparent;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.view-btn.active {
+  background: var(--white);
+  color: var(--primary);
+  box-shadow: var(--shadow-xs);
+}
+
+.projects-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.project-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+.project-img-box {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.project-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.project-card:hover .project-img-box img {
+  transform: scale(1.08);
+}
+.project-status-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(16, 185, 129, 0.95);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-xs);
+}
+.project-source-badge {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  background: rgba(15, 23, 42, 0.85);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+.project-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.project-title {
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: var(--slate-900);
+  line-height: 1.35;
+}
+.project-location {
+  font-size: 12.5px;
+  color: var(--slate-500);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.project-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--slate-100);
+  padding-top: 14px;
+  margin-top: auto;
+}
+.project-budget-label {
+  font-size: 11px;
+  color: var(--slate-400);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.project-budget-val {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+/* Projects Table Mode */
+.projects-table-container {
+  display: none;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--shadow-md);
+  overflow-x: auto;
+}
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+.projects-table th {
+  background: var(--slate-50);
+  padding: 16px 20px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--slate-700);
+  border-bottom: 1px solid var(--slate-200);
+  white-space: nowrap;
+}
+.projects-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--slate-100);
+  vertical-align: middle;
+}
+.projects-table tr:hover td {
+  background-color: var(--slate-50);
+}

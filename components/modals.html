@@ -1,0 +1,148 @@
+       17. MODAL: LAYANAN SURAT MANDIRI (E-Kependudukan Tawun)
+       ========================================================================== -->
+  <div class="modal-overlay" id="modal-surat">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div class="quick-icon-wrap" style="width:40px; height:40px; font-size:16px; margin-bottom:0; background:var(--primary);">
+            <i class="fas fa-file-pen"></i>
+          </div>
+          <div>
+            <h3>Layanan Pengurusan Surat Mandiri</h3>
+            <span style="font-size:12px; color:var(--slate-500);">Pelayanan Cepat Warga Desa Tawun Tanpa Antre di Kantor Desa</span>
+          </div>
+        </div>
+        <div class="modal-close-btn">&times;</div>
+      </div>
+
+      <div class="modal-body">
+        <form id="formPengajuanSurat">
+          <div class="form-group">
+            <label class="form-label" for="nikPemohon">Nomor Induk Kependudukan (NIK) Sesuai KTP *</label>
+            <input type="text" id="nikPemohon" class="form-control" maxlength="16" placeholder="Contoh: 5201xxxxxxxxxxxx (16 Digit NIK Lombok Barat)" required>
+            <small style="font-size:11.5px; color:var(--slate-500);">NIK akan diverifikasi langsung oleh sistem kependudukan desa.</small>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="namaPemohon">Nama Lengkap Pemohon *</label>
+            <input type="text" id="namaPemohon" class="form-control" placeholder="Nama sesuai KTP" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="waPemohon">Nomor WhatsApp Aktif *</label>
+            <input type="tel" id="waPemohon" class="form-control" placeholder="08xxxxxxxxxx (untuk pengiriman notifikasi status dokumen)" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="jenisSurat">Pilih Jenis Surat Permohonan *</label>
+            <select id="jenisSurat" class="form-control" required>
+              <option value="">-- Pilih Jenis Surat --</option>
+              <option value="Surat Keterangan Tidak Mampu (SKTM)">Surat Keterangan Tidak Mampu (SKTM - Beasiswa / KIS)</option>
+              <option value="Surat Keterangan Usaha (SKU)">Surat Keterangan Usaha (SKU - Pengrajin Mutiara / Nelayan / KUR Bank)</option>
+              <option value="Surat Keterangan Domisili">Surat Keterangan Domisili Tempat Tinggal</option>
+              <option value="Surat Pengantar SKCK">Surat Pengantar Catatan Kepolisian (SKCK Polsek Sekotong)</option>
+              <option value="Surat Keterangan Kelahiran">Surat Keterangan Kelahiran / Pengantar Akta</option>
+              <option value="Surat Keterangan Kematian">Surat Keterangan Kematian</option>
+              <option value="Surat Keterangan Belum Menikah">Surat Keterangan Belum Menikah</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="keperluanSurat">Keperluan / Keterangan Tambahan</label>
+            <textarea id="keperluanSurat" class="form-control" rows="3" placeholder="Tuliskan tujuan penggunaan surat secara jelas..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; padding:14px;">
+            <i class="fas fa-paper-plane"></i> Kirim Permohonan & Dapatkan Nomor Resi
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       18. MODAL: LAPOR & PENGADUAN WARGA (Pijar Tawun)
+       ========================================================================== -->
+  <div class="modal-overlay" id="modal-lapor">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div class="quick-icon-wrap" style="width:40px; height:40px; font-size:16px; margin-bottom:0; background:var(--danger);">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <div>
+            <h3>Lapor & Pengaduan Warga / Wisatawan</h3>
+            <span style="font-size:12px; color:var(--slate-500);">Saluran Pengawasan & Respons Cepat Pemdes Tawun</span>
+          </div>
+        </div>
+        <div class="modal-close-btn">&times;</div>
+      </div>
+
+      <div class="modal-body">
+        <form id="formLaporWarga">
+          <div class="form-group">
+            <label class="form-label" for="kategoriLaporan">Klasifikasi Aduan *</label>
+            <select id="kategoriLaporan" class="form-control" required>
+              <option value="Pelayanan Dermaga & Penyeberangan">Pelayanan Dermaga Wisata & Penyeberangan Jukung</option>
+              <option value="Infrastruktur & Jalan Pesisir">Infrastruktur, Jalan Lingkungan & Talud Abrasi</option>
+              <option value="Kebersihan Pantai & Terumbu Karang">Kebersihan Pantai, Sampah Laut & Terumbu Karang</option>
+              <option value="Pelayanan Administrasi Kantor Desa">Pelayanan Pegawai & Administrasi Kantor Desa</option>
+              <option value="Bansos & Bantuan Nelayan">Bantuan Sosial, BLT & Bantuan Alat Tangkap Nelayan</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="judulLaporan">Judul Laporan Singkat *</label>
+            <input type="text" id="judulLaporan" class="form-control" placeholder="Contoh: Kerusakan Lampu Dermaga Tawun" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="isiLaporan">Uraian Kejadian & Lokasi Rinci *</label>
+            <textarea id="isiLaporan" class="form-control" rows="4" placeholder="Jelaskan detail masalah, perkiraan lokasi, dan kronologi..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Sifat Identitas Pelapor</label>
+            <div style="display:flex; gap:20px; font-size:13.5px; padding-top:4px;">
+              <label style="cursor:pointer;"><input type="radio" name="anonim" value="rahasia" checked> 🔒 Rahasiakan Nama Saya (Anonim)</label>
+              <label style="cursor:pointer;"><input type="radio" name="anonim" value="publik"> 👤 Terbuka</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-accent" style="width:100%; padding:14px;">
+            <i class="fas fa-paper-plane"></i> Kirim Laporan ke Kantor Desa
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       19. MODAL: DETAIL PENGUMUMAN
+       ========================================================================== -->
+  <div class="modal-overlay" id="modal-pengumuman">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Detail Pengumuman Resmi Desa Tawun</h3>
+        <div class="modal-close-btn">&times;</div>
+      </div>
+      <div class="modal-body">
+        <span class="status-pill mb-2"><i class="fas fa-calendar"></i> Dipublikasikan: 13 Oktober 2026</span>
+        <h3 style="font-size:20px; font-weight:800; margin:12px 0 16px; color:var(--slate-900);">
+          Undangan Rapat Koordinasi Persiapan Lebaran Topat & Musrenbangdes Tawun 2026
+        </h3>
+        <p style="font-size:14.5px; line-height:1.7; color:var(--slate-700); margin-bottom:16px;">
+          Kepada Yth. Seluruh Kepala Dusun, Ketua RT, Pengurus Pokdarwis Dermaga Tawun, Asosiasi Perahu Jukung Wisata, Tokoh Agama, dan Tokoh Pemuda Desa Tawun. Diberitahukan bahwa musyawarah rencana pembangunan dan persiapan pengamanan perayaan adat Lebaran Topat akan diselenggarakan pada:
+        </p>
+        <ul style="font-size:14px; color:var(--slate-700); line-height:1.8; margin-left:20px; margin-bottom:20px;">
+          <li><strong>Hari/Tanggal:</strong> Selasa, 20 Oktober 2026</li>
+          <li><strong>Waktu:</strong> Pukul 09.00 WITA s/d selesai</li>
+          <li><strong>Tempat:</strong> Balai Pertemuan Dermaga Tawun, Sekotong</li>
+          <li><strong>Agenda:</strong> Penetapan prioritas pembangunan pesisir 2026, standarisasi tarif perahu jukung, dan mitigasi keselamatan laut wisatawan.</li>
+        </ul>
+        <button class="btn btn-primary" data-modal-close style="width:100%;">
+          Tutup Pengumuman
+        </button>
+      </div>
+    </div>
+  </div>

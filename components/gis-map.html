@@ -1,0 +1,73 @@
+<!-- ==========================================================================
+       9. PETA INTERAKTIF GEOSPASIAL GIS (Dermaga Tawun & Gili Sekotong)
+       ========================================================================== -->
+  <section class="section" id="peta">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-map-location-dot"></i> Geospasial Wilayah Bahari</span>
+        <h2 class="section-title">Peta Digital Kawasan Desa Tawun & Rute Wisata Gili Sekotong</h2>
+        <p class="section-subtitle">
+          Eksplorasi titik Dermaga Tawun (pusat penyeberangan), gugusan pulau Gili Nanggu, Gili Sudak, dan Gili Kedis, titik proyek infrastruktur pesisir, sentra mutiara, serta pos pelayanan publik.
+        </p>
+      </div>
+
+      <div class="gis-wrapper">
+        <!-- Sidebar Filter Layer -->
+        <div class="gis-sidebar">
+          <h3 class="gis-sidebar-title">
+            <i class="fas fa-layer-group text-teal"></i> Lapisan (Layers) Peta
+          </h3>
+          <p style="font-size: 12.5px; color: var(--slate-500);">
+            Klik tombol di bawah ini untuk menampilkan atau menyembunyikan titik koordinat sesuai kategori:
+          </p>
+
+          <div class="layer-toggles-list">
+            <!-- 1: Pembangunan -->
+            <button class="layer-toggle-btn active" data-layer="pembangunan">
+              <div class="layer-info-left">
+                <span class="layer-indicator pembangunan"></span>
+                <span>Proyek Infrastruktur Pesisir</span>
+              </div>
+              <i class="fas fa-check"></i>
+            </button>
+
+            <!-- 2: Wisata -->
+            <button class="layer-toggle-btn active" data-layer="wisata">
+              <div class="layer-info-left">
+                <span class="layer-indicator wisata"></span>
+                <span>Dermaga & Wisata Bahari Gili</span>
+              </div>
+              <i class="fas fa-check"></i>
+            </button>
+
+            <!-- 3: UMKM -->
+            <button class="layer-toggle-btn active" data-layer="umkm">
+              <div class="layer-info-left">
+                <span class="layer-indicator umkm"></span>
+                <span>Sentra Mutiara & UMKM Laut</span>
+              </div>
+              <i class="fas fa-check"></i>
+            </button>
+
+            <!-- 4: Fasilitas -->
+            <button class="layer-toggle-btn active" data-layer="fasilitas">
+              <div class="layer-info-left">
+                <span class="layer-indicator fasilitas"></span>
+                <span>Kantor Desa & Pos Pelayanan</span>
+              </div>
+              <i class="fas fa-check"></i>
+            </button>
+          </div>
+
+          <div style="margin-top: auto; padding: 14px; background: var(--white); border-radius: var(--radius-md); border: 1px solid var(--slate-200); font-size: 12px; color: var(--slate-600);">
+            <i class="fas fa-compass text-teal"></i> <strong>Titik Koordinat Dermaga Tawun:</strong> -8.7517° Lintang Selatan, 116.0095° Bujur Timur (Kec. Sekotong, Lombok Barat).
+          </div>
+        </div>
+
+        <!-- Wadah Leaflet Map -->
+        <div class="gis-map-container">
+          <div id="village-map"></div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,84 @@
+/* --- Responsive Media Queries --- */
+@media (max-width: 1024px) {
+  .welcome-card {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .gis-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .gis-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--slate-200);
+  }
+  .news-agenda-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 868px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: var(--shadow-lg);
+    border-bottom: 1px solid var(--slate-200);
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-link {
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 14px;
+  }
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: var(--slate-50);
+    padding-left: 12px;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+  .top-bar-meta {
+    display: none;
+  }
+  .apbdes-summary-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    padding: 40px 0 60px;
+  }
+  .hero-arrow {
+    display: none;
+  }
+  .quick-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stats-banner {
+    padding: 32px 20px;
+  }
+}

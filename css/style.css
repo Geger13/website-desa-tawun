@@ -1,0 +1,34 @@
+/* ==========================================================================
+   PORTAL RESMI PEMERINTAH DESA TAWUN - SEKOTONG, LOMBOK BARAT, NTB
+   Master Design System & Component Architecture
+   Senior Frontend Architecture - Clean Code, Scalable & High-Fidelity UI
+   ========================================================================== */
+
+/* --- 1. Design Tokens & Variables --- */
+@import url('./variables.css');
+
+/* --- 2. Base, Reset, Typography & Layout Utilities --- */
+@import url('./base.css');
+
+/* --- 3. Component Stylesheets --- */
+@import url('./components/topbar.css');
+@import url('./components/header.css');
+@import url('./components/hero.css');
+@import url('./components/quick-access.css');
+@import url('./components/ticker.css');
+@import url('./components/sambutan.css');
+@import url('./components/stats.css');
+@import url('./components/apbdes.css');
+@import url('./components/gis-map.css');
+@import url('./components/pembangunan.css');
+@import url('./components/wisata.css');
+@import url('./components/umkm.css');
+@import url('./components/kabar.css');
+@import url('./components/dokumen.css');
+@import url('./components/sotk.css');
+@import url('./components/modal.css');
+@import url('./components/toast.css');
+@import url('./components/footer.css');
+
+/* --- 4. Responsive Breakpoints & Overrides --- */
+@import url('./responsive.css');

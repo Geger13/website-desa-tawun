@@ -1,0 +1,81 @@
+/* --- Transparansi APBDes Section --- */
+.apbdes-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--shadow-lg);
+  padding: 36px;
+}
+.apbdes-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.apbdes-box {
+  padding: 22px;
+  border-radius: var(--radius-lg);
+  background: var(--slate-50);
+  border: 1px solid var(--slate-200);
+  transition: var(--transition-fast);
+}
+.apbdes-box.pendapatan {
+  border-left: 4px solid var(--success);
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+.apbdes-box.belanja {
+  border-left: 4px solid var(--warning);
+  background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);
+}
+.apbdes-box.pembiayaan {
+  border-left: 4px solid var(--info);
+  background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+}
+.apbdes-box-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--slate-500);
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+.apbdes-box-amount {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--slate-900);
+  line-height: 1.2;
+}
+.apbdes-box-meta {
+  font-size: 12px;
+  color: var(--slate-500);
+  margin-top: 6px;
+}
+
+.apbdes-bars-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+.apbdes-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.apbdes-bar-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.progress-track {
+  height: 10px;
+  background: var(--slate-100);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}

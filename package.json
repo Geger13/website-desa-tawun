@@ -1,0 +1,23 @@
+{
+  "name": "portal-desa-tawun",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Portal Resmi Pemerintah Desa Tawun, Kec. Sekotong, Lombok Barat, NTB - Clean Code Modular Architecture",
+  "main": "index.html",
+  "scripts": {
+    "dev": "node build.js --serve",
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "start": "node build.js --serve"
+  },
+  "keywords": [
+    "desa-tawun",
+    "sekotong",
+    "lombok-barat",
+    "portal-desa",
+    "clean-code",
+    "modular-architecture"
+  ],
+  "author": "Pemerintah Desa Tawun",
+  "license": "MIT"
+}

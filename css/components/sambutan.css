@@ -1,0 +1,102 @@
+/* --- Sambutan Kepala Desa Section --- */
+.welcome-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--shadow-lg);
+  padding: 44px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.welcome-photo-wrap {
+  position: relative;
+  text-align: center;
+}
+.welcome-photo-backdrop {
+  position: absolute;
+  inset: -12px;
+  background: var(--primary-gradient);
+  border-radius: var(--radius-xl);
+  transform: rotate(-3deg);
+  z-index: 0;
+  opacity: 0.85;
+}
+.welcome-photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: calc(var(--radius-xl) - 4px);
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--white);
+}
+.welcome-badge-status {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  white-space: nowrap;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.welcome-badge-status i {
+  color: var(--accent-gold);
+}
+
+.welcome-text h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.welcome-text h2 span {
+  color: var(--primary-light);
+}
+.welcome-title-sub {
+  font-size: 14.5px;
+  color: var(--slate-500);
+  font-weight: 600;
+  margin-bottom: 22px;
+  display: block;
+}
+.welcome-quote {
+  font-size: 15px;
+  color: var(--slate-600);
+  line-height: 1.8;
+  margin-bottom: 26px;
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid var(--primary-light);
+}
+.welcome-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--slate-200);
+  padding-top: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.welcome-leader {
+  line-height: 1.3;
+}
+.welcome-leader-name {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--slate-900);
+}
+.welcome-leader-title {
+  font-size: 13px;
+  color: var(--slate-500);
+}
